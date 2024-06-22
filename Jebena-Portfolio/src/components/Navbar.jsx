@@ -68,13 +68,13 @@ function Navbar() {
             {isOpen ? (
               <span className="font-semibold text-3xl">X</span>
             ) : (
-              <FiMenu size={30} color="black" />
+              <FiMenu size={30} color="yellow" />
             )}
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-gray-700 bg-opacity-[0] text-black w-full px-6">
-            <Navlinks className="flex-col gap-3 space-y-2 py-4" />
+          <div className="md:hidden bg-gray-700 bg-opacity-[0] text-yellow-200 w-full px-6">
+            <Navlinks className="flex-col gap-2 space-y-2 py-4" />
           </div>
         )}
       </nav>
