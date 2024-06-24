@@ -44,13 +44,8 @@ function About() {
   return (
     <div className="bg-gray-50 min-h-screen w-screen mx-auto">
       {/* Hero Section */}
-      <div className="relative">
-        <img
-          src={coffeeImage}
-          alt="Coffee"
-          className="object-cover w-full h-72 md:h-96 rounded-lg shadow-lg"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center rounded-lg">
+      <div className="bg-coffee-pattern bg-cover bg-fixed md:h-[400px] p-8 md:p-16">
+        <div className="relative  flex items-center justify-center mt-[100px] md:mt-[150px]  bottom-4 rounded-lg">
           <h1 className="text-4xl md:text-6xl text-white font-bold pb-5 border-b-4 border-yellow-200">
             About Us
           </h1>
@@ -58,7 +53,7 @@ function About() {
       </div>
 
       {/* Mission Section */}
-      <div className="mt-12 text-center md:w-[70%] mx-auto bg-slate-50 p-5">
+      <div className="mt-12 text-center w-[80%] md:w-[70%] mx-auto bg-slate-50 p-5">
         <label className="text-3xl text-yellow-950 md:text-4xl font-bold mb-8 pb-3 border-b-2 border-yellow-950">
           Our Mission
         </label>
@@ -72,7 +67,7 @@ function About() {
         </div>
       </div>
       {/* Vision Section */}
-      <div className="mt-12 text-center">
+      <div className="mt-12 text-center w-[80%] md:w-[70%] mx-auto">
         <label className="text-3xl md:text-4xl font-bold text-yellow-950  pb-3 border-b-2 border-yellow-950 ">
           Our Vision
         </label>
@@ -85,7 +80,7 @@ function About() {
       </div>
 
       {/* Goals Section */}
-      <div className="mt-12 text-start flex flex-col justify-center items-center">
+      <div className="mt-12 text-start flex flex-col justify-center items-center w-[90%] md:w-[80%] mx-auto">
         <label className="text-3xl md:text-4xl font-bold text-yellow-950  pb-3 border-b-2 border-yellow-950 text-center">
           Our Goals
         </label>

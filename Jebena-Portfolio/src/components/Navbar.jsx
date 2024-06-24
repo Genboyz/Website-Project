@@ -11,7 +11,7 @@ function Navbar() {
 
   const Navlinks = ({ className }) => (
     <ul
-      className={`flex flex-col gap-7 md:flex-row space-y-4 md:space-y-0 md:space-x-6 ${className}`}
+      className={`flex flex-col gap-7 md:flex-row space-y-4 md:space-y-0 md:space-x-6 ${className} bg-yellow-800 bg-opacity-70 px-6`}
     >
       <li>
         <Link
@@ -73,7 +73,7 @@ function Navbar() {
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-gray-700 bg-opacity-[0] text-yellow-200 w-full px-6">
+          <div className="md:hidden bg-gray-700 bg-opacity-[0] text-yellow-200 w-full ">
             <Navlinks className="flex-col gap-2 space-y-2 py-4" />
           </div>
         )}
