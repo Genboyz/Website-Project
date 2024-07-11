@@ -1,130 +1,134 @@
 import React from "react";
-import coffeeImage from "../assets/images/coffee.jpg";
-import Team from "../components/Team";
-import missionImg from "../assets/images/etcoffee.jpg";
+import coffee from "../assets/images/coffee-beans.jpg";
+import jebena from "../assets/images/ethiopian-traditional-coffee-ceremony.jpg";
+import etcoffee from "../assets/images/young-woman-in-traditional-clothing-is-preparing-a-coffee-ceremony-at-lalibela-ethiopia.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../animation";
 function About() {
-  const teamMembers = [
-    {
-      name: "Tajur Tamirayehu",
-      role: "Journalist, Certified Photographer, Certified Barista, Certified Cupper, Concept Developer and Creator",
-      description:
-        "Tajur brings extensive expertise and passion for coffee to the team.",
-      image: "../assets/images/tajur.jpg",
-    },
-    {
-      name: "Production Crew",
-      role: "",
-      description:
-        "A team of professionals responsible for producing high-quality content.",
-      image: "",
-    },
-    {
-      name: "Social Media Manager and Content Creator",
-      role: "",
-      description:
-        " Experts in managing social media presence and creating engaging content.",
-      image: "",
-    },
-    {
-      name: "Graphics Designer",
-      role: "",
-      description:
-        " Skilled in visual design to support branding and promotional efforts.",
-      image: "",
-    },
-    {
-      name: " Web Developer",
-      role: "",
-      description:
-        "Ensures a seamless online experience through a well-maintained website",
-      image: "",
-    },
-  ];
-
   return (
-    <div className="bg-gray-50 min-h-screen w-screen mx-auto">
-      {/* Hero Section */}
-      <div className="bg-coffee-pattern bg-cover bg-fixed md:h-[400px] p-8 md:p-16">
-        <div className="relative  flex items-center justify-center mt-[100px] md:mt-[150px]  bottom-4 rounded-lg">
-          <h1 className="text-4xl md:text-6xl text-white font-bold pb-5 border-b-4 border-yellow-200">
+    <div className=" ">
+      <div className=" p-8 ">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="relative  flex items-center justify-center mt-[100px] md:mt-[150px]  bottom-4 rounded-lg"
+        >
+          <h1 className="text-4xl md:text-6xl text-yellow-950 font-bold mb-7 pb-3 border-b-4 border-yellow-400">
             About Us
           </h1>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Mission Section */}
-      <div className="mt-12 text-center w-[80%] md:w-[70%] mx-auto bg-slate-50 p-5">
-        <label className="text-3xl text-yellow-950 md:text-4xl font-bold mb-8 pb-3 border-b-2 border-yellow-950">
-          Our Mission
-        </label>
-        <div className="flex justify-center">
-          <p className="text-center mt-8 text-lg md:text-xl text-yellow-800 max-w-4xl">
+      <div className=" flex justify-center gap-10 w-[80%] mx-auto">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+        >
+          <img
+            src={jebena}
+            alt=""
+            className="w-[400px] h-[400px] object-cover"
+          />
+        </motion.div>
+        <motion.div
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-yellow-800 text-2xl text-justify md:w-[550px]"
+        >
+          <p>
+            Jebena, named after the world's first coffee brewing equipment
+            originating from Ethiopia, is a company dedicated to promoting
+            Ethiopian coffee culture globally. The jebena is a traditional,
+            aromatic, and intricately designed brewing vessel, symbolizing the
+            rich heritage and future of Ethiopian coffee. Our mission is to
+            share this heritage with the world through various coffee-related
+            initiatives.
+          </p>
+        </motion.div>
+      </div>
+      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex justify-center gap-10 py-6 mt-10 w-screen">
+        <div className=" flex justify-start gap-3 my-12 bg-white h-[300px] p-4 ">
+          <h2 className=" flex items-center text-3xl text-yellow-950 md:text-4xl font-bold  pr-3 border-r-2 border-yellow-950">
+            Our Mission
+          </h2>
+          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800 md:w-[550px] ">
             To promote and celebrate Ethiopian coffee culture worldwide by
             providing authentic and enriching experiences through café reviews,
             podcasts, documentaries, expert talk shows, interviews, consulting
             services, and organizing coffee-related events.
           </p>
         </div>
-      </div>
-      {/* Vision Section */}
-      <div className="mt-12 text-center w-[80%] md:w-[70%] mx-auto">
-        <label className="text-3xl md:text-4xl font-bold text-yellow-950  pb-3 border-b-2 border-yellow-950 ">
-          Our Vision
-        </label>
-        <p className="mt-8 text-lg md:text-xl  text-yellow-800 max-w-4xl mx-auto">
-          To be the leading global ambassador of Ethiopian coffee, known for our
-          dedication to quality, authenticity, and cultural richness, and to
-          inspire a deeper appreciation and understanding of Ethiopian coffee
-          heritage around the world.
-        </p>
-      </div>
-
-      {/* Goals Section */}
-      <div className="mt-12 text-start flex flex-col justify-center items-center w-[90%] md:w-[80%] mx-auto">
-        <label className="text-3xl md:text-4xl font-bold text-yellow-950  pb-3 border-b-2 border-yellow-950 text-center">
-          Our Goals
-        </label>
-        <div className="mt-8 space-y-8 max-w-5xl mx-auto text-gray-700">
-          <div className="flex space-x-4 items-center">
-            <span className="text-4xl md:text-5xl text-yellow-500">1.</span>
-            <p className="text-lg md:text-xl">
-              <strong>Promote Ethiopian Coffee:</strong> Raise global awareness
-              and appreciation of Ethiopian coffee.
-            </p>
-          </div>
-          <div className="flex space-x-4 items-start">
-            <span className="text-4xl md:text-5xl text-yellow-500">2.</span>
-            <p className="text-lg md:text-xl">
-              <strong>Quality Content:</strong> Produce high-quality content,
-              including documentaries, podcasts, and reviews, that educates and
-              entertains coffee enthusiasts.
-            </p>
-          </div>
-          <div className="flex space-x-4 items-start">
-            <span className="text-4xl md:text-5xl text-yellow-500">3.</span>
-            <p className="text-lg md:text-xl">
-              <strong>Expert Engagement:</strong> Connect coffee experts and
-              enthusiasts through talk shows, interviews, and events.
-            </p>
-          </div>
-          <div className="flex space-x-4 items-start">
-            <span className="text-4xl md:text-5xl text-yellow-500">4.</span>
-            <p className="text-lg md:text-xl">
-              <strong>Global Presence:</strong> Establish a strong presence not
-              only in Ethiopia but also around the world.
-            </p>
-          </div>
-          <div className="flex space-x-4 items-start">
-            <span className="text-4xl md:text-5xl text-yellow-500">5.</span>
-            <p className="text-lg md:text-xl">
-              <strong>Innovation:</strong> Continuously innovate in the ways we
-              present and promote Ethiopian coffee culture.
-            </p>
-          </div>
+        <div className=" flex justify-start gap-3  my-12 bg-white h-[300px] p-4 ">
+          <label className="flex items-center text-3xl  md:text-4xl font-bold text-yellow-950  pr-3 border-r-2 border-yellow-950 ">
+            Our Vision
+          </label>
+          <p className="mt-8 text-justify text-lg md:text-xl  text-yellow-800 max-w-4xl mx-auto md:w-[550px]">
+            To be the leading global ambassador of Ethiopian coffee, known for
+            our dedication to quality, authenticity, and cultural richness, and
+            to inspire a deeper appreciation and understanding of Ethiopian
+            coffee heritage around the world.
+          </p>
         </div>
       </div>
 
-      <Team teamMembers={teamMembers} />
+      <div className="mt-12 text-start flex flex-col justify-center items-center w-[90%] md:w-[80%] mx-auto">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="flex justify-center gap-8"
+        >
+          <img src={etcoffee} alt="" className="object-cover" />
+          <div className="flex flex-col justify-center items-center my-5 space-y-8 max-w-5xl mx-auto text-gray-700">
+            <label className="text-3xl md:text-4xl  text-center font-bold text-yellow-950  pb-3 border-b-2 border-yellow-950 mb-7">
+              Our Goals
+            </label>
+            <div className="flex space-x-4 items-center">
+              <span className="text-4xl md:text-5xl text-yellow-500">01.</span>
+              <p className="text-lg md:text-xl">
+                <strong>Promote Ethiopian Coffee:</strong> Raise global
+                awareness and appreciation of Ethiopian coffee.
+              </p>
+            </div>
+            <div className="flex space-x-4 items-start">
+              <span className="text-4xl md:text-5xl text-yellow-500">02.</span>
+              <p className="text-lg md:text-xl">
+                <strong>Quality Content:</strong> Produce high-quality content,
+                including documentaries, podcasts, and reviews, that educates
+                and entertains coffee enthusiasts.
+              </p>
+            </div>
+            <div className="flex space-x-4 items-start">
+              <span className="text-4xl md:text-5xl text-yellow-500">03.</span>
+              <p className="text-lg md:text-xl">
+                <strong>Expert Engagement:</strong> Connect coffee experts and
+                enthusiasts through talk shows, interviews, and events.
+              </p>
+            </div>
+            <div className="flex space-x-4 items-start">
+              <span className="text-4xl md:text-5xl text-yellow-500">04.</span>
+              <p className="text-lg md:text-xl">
+                <strong>Global Presence:</strong> Establish a strong presence
+                not only in Ethiopia but also around the world.
+              </p>
+            </div>
+            <div className="flex space-x-4 items-start">
+              <span className="text-4xl md:text-5xl text-yellow-500">05.</span>
+              <p className="text-lg md:text-xl">
+                <strong>Innovation:</strong> Continuously innovate in the ways
+                we present and promote Ethiopian coffee culture.
+              </p>
+            </div>
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }

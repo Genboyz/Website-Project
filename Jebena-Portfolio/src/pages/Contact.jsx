@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { fadeIn } from "../animation";
 
 function Contact() {
   const form = useRef();
@@ -34,9 +36,8 @@ function Contact() {
   };
 
   return (
-    <div className="bg-coffee-pattern bg-cover bg-fixed min-h-screen w-screen flex items-center justify-center p-8">
-      <div className="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-full max-w-4xl space-y-8 md:w-[90%] mx-auto">
-        {/* Notification */}
+    <div className="w-screen flex items-center justify-center p-8 bg-yellow-600">
+      <div className="bg-white/80 p-8 rounded-lg shadow-lg w-full max-w-4xl space-y-8 md:w-[90%] mx-auto">
         {message && (
           <div
             className={` z-30 fixed top-4 right-4 py-2 px-4 rounded-md shadow-md transition-all duration-300 ${
@@ -48,18 +49,23 @@ function Contact() {
             {message}
           </div>
         )}
-        {/* Header */}
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-yellow-600 mb-4">
-            Contact Us
-          </h1>
-          <p className="text-gray-700 font-semibold">
+          <motion.div
+            variants={fadeIn("up", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="relative  flex items-center justify-center bottom-4 rounded-lg"
+          >
+            <h1 className="text-4xl md:text-6xl text-yellow-950 font-bold mb-7 pb-3 border-b-4 border-yellow-400">
+              Contact Us
+            </h1>
+          </motion.div>
+          <p className="text-gray-700 font-semibold text-xl">
             We'd love to hear from you! Whether you have a question about our
             services, need assistance, or just want to talk coffee.
           </p>
         </div>
-
-        {/* Contact Form */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 font-bold">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
@@ -85,7 +91,7 @@ function Contact() {
                 type="text"
                 id="name"
                 name="user_name"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 p-2"
+                className="mt-1 block w-full rounded-md border-yellow-300 shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 p-2"
                 required
               />
             </div>
@@ -100,7 +106,7 @@ function Contact() {
                 type="email"
                 id="email"
                 name="user_email"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 p-2"
+                className="mt-1 block w-full rounded-md border-yellow-300 shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 p-2"
                 required
               />
             </div>
@@ -115,7 +121,7 @@ function Contact() {
                 id="message"
                 name="message"
                 rows="4"
-                className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 p-2"
+                className="mt-1 block w-full rounded-md border-yellow-300 shadow-sm focus:border-yellow-500 focus:ring focus:ring-yellow-500 focus:ring-opacity-50 p-2"
                 required
               ></textarea>
             </div>
