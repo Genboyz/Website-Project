@@ -20,7 +20,7 @@ function Navbar() {
           spy={true}
           duration={1500}
           to="home"
-          className="hover:text-yellow-950 transition hover:border-b-2 hover:border-amber-200 cursor-pointer py-2"
+          className="hover:text-yellow-950 transition hover:border-b-4 hover:border-yellow-500 cursor-pointer py-2 font-bold"
           onClick={() => setIsOpen(false)}
         >
           Home
@@ -33,7 +33,7 @@ function Navbar() {
           spy={true}
           duration={1500}
           to="about"
-          className="hover:text-yellow-950 transition hover:border-b-2 hover:border-amber-200 cursor-pointer py-2"
+          className="hover:text-yellow-950 transition hover:border-b-4 hover:border-yellow-500 cursor-pointer py-2 font-bold"
           onClick={() => setIsOpen(false)}
         >
           About Us
@@ -46,7 +46,7 @@ function Navbar() {
           activeClass="active"
           spy={true}
           duration={1500}
-          className="hover:text-yellow-950 transition hover:border-b-2 hover:border-amber-200 cursor-pointer py-2"
+          className="hover:text-yellow-950 transition hover:border-b-4 hover:border-yellow-500 cursor-pointer py-2 font-bold"
           onClick={() => setIsOpen(false)}
         >
           Services
@@ -59,7 +59,7 @@ function Navbar() {
           activeClass="active"
           spy={true}
           duration={1500}
-          className="hover:text-yellow-950 transition hover:border-b-2 hover:border-amber-200 cursor-pointer py-2"
+          className="hover:text-yellow-950 transition hover:border-b-4 hover:border-yellow-500 cursor-pointer py-2 font-bold"
           onClick={() => setIsOpen(false)}
         >
           Our Team
@@ -72,7 +72,7 @@ function Navbar() {
           spy={true}
           duration={1500}
           to="contact"
-          className="hover:text-yellow-950 transition hover:border-b-2 hover:border-amber-200 cursor-pointer py-2"
+          className="hover:text-yellow-950 transition hover:border-b-4 hover:border-yellow-500 cursor-pointer py-2 font-bold"
           onClick={() => setIsOpen(false)}
         >
           Contact

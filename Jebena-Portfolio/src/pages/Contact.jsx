@@ -36,8 +36,8 @@ function Contact() {
   };
 
   return (
-    <div className="w-screen flex items-center justify-center p-8 bg-yellow-600">
-      <div className="bg-white/80 p-8 rounded-lg shadow-lg w-full max-w-4xl space-y-8 md:w-[90%] mx-auto">
+    <div className="bg-wave bg-no-repeat bg-cover w-screen flex items-center justify-center p-8 mt-12">
+      <div className="bg-white/90 p-8 rounded-lg shadow-lg w-full max-w-4xl space-y-8 md:w-[90%] mx-auto">
         {message && (
           <div
             className={` z-30 fixed top-4 right-4 py-2 px-4 rounded-md shadow-md transition-all duration-300 ${
