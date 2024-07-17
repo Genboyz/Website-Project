@@ -68,7 +68,7 @@ function About() {
           <label className="flex items-center text-3xl  md:text-4xl font-bold text-yellow-950  pr-3 lg:border-r-2 border-yellow-950 ">
             Our Vision
           </label>
-          <p className="mt-8 text-justify text-lg md:text-xl  text-yellow-800 max-w-4xl">
+          <p className="mt-8 text-justify text-lg md:text-xl text-yellow-800 max-w-4xl">
             To be the leading global ambassador of Ethiopian coffee, known for
             our dedication to quality, authenticity, and cultural richness, and
             to inspire a deeper appreciation and understanding of Ethiopian
