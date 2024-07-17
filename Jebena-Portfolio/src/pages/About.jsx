@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../animation";
 function About() {
   return (
-    <div className=" ">
-      <div className=" p-8 ">
+    <div className="">
+      <div className=" p-8">
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial="hidden"
@@ -53,7 +53,7 @@ function About() {
         </motion.div>
       </div>
       <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex flex-col lg:flex-row justify-center lg:gap-10 gap-4 p-6 mt-10 w-screen">
-        <div className=" flex flex-col lg:flex-row lg:justify-start items-center lg:gap-3 lg:my-12 bg-white h-[300px] p-4  w-[90%] mx-auto">
+        <div className=" flex flex-col lg:flex-row lg:justify-start items-center lg:gap-3 lg:my-12 bg-white h-[320px] p-4  w-[90%] mx-auto">
           <h2 className=" flex items-center text-3xl text-yellow-950 md:text-4xl font-bold  pr-3 lg:border-r-2 border-yellow-950">
             Our Mission
           </h2>
@@ -64,7 +64,7 @@ function About() {
             services, and organizing coffee-related events.
           </p>
         </div>
-        <div className=" flex flex-col lg:flex-row lg:justify-start justify-center items-center lg:gap-3 lg:my-12 bg-white h-[300px] p-4  w-[90%] mx-auto">
+        <div className=" flex flex-col lg:flex-row lg:justify-start justify-center items-center lg:gap-3 lg:my-12 bg-white h-[320px] p-4  w-[90%] mx-auto">
           <label className="flex items-center text-3xl  md:text-4xl font-bold text-yellow-950  pr-3 lg:border-r-2 border-yellow-950 ">
             Our Vision
           </label>

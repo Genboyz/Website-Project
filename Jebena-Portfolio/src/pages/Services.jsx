@@ -19,7 +19,7 @@ function Services() {
         viewport={{ once: false, amount: 0.3 }}
         className="relative  flex items-center justify-center my-[100px]  bottom-4 rounded-lg"
       >
-        <h1 className="text-4xl md:text-6xl text-yellow-950 font-bold mb-7 pb-3 border-b-4 border-yellow-400">
+        <h1 className="text-4xl md:text-6xl text-yellow-950 font-bold lg:mb-5 mb-2 pb-3 border-b-4 border-yellow-400">
           Services
         </h1>
       </motion.div>
