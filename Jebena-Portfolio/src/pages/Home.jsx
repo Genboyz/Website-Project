@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import image3 from "../assets/images/coffee.jpg";
+import image3 from "../assets/images/gallery/img02.jpg";
 import image1 from "../assets/images/coffee-beans.jpg";
-import image2 from "../assets/images/etcoffee.jpg";
-import image4 from "../assets/images/hands-holding-raw-beans-of-ethiopian-coffee.jpg";
+import image2 from "../assets/images/gallery/img03.jpg";
+import image4 from "../assets/images/close-up-of-coffee-cherries-on-kenyan-plantation-east-africa.jpg";
 import { BsChevronCompactLeft } from "react-icons/bs";
 import { BsChevronCompactRight } from "react-icons/bs";
 function Home() {

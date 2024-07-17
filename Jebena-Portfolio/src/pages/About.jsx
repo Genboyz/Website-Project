@@ -52,12 +52,12 @@ function About() {
           </p>
         </motion.div>
       </div>
-      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex flex-col lg:flex-row justify-center lg:gap-10 gap-4 p-6 mt-10 w-screen">
-        <div className=" flex flex-col lg:flex-row lg:justify-start items-center lg:gap-3 lg:my-12 bg-white h-[320px] p-4  w-[90%] mx-auto">
+      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex flex-col lg:flex-row justify-center lg:gap-10 gap-4 p-6 mt-10">
+        <div className=" flex flex-col lg:flex-row lg:justify-start items-center lg:gap-3 lg:my-12 bg-white h-[320px] p-4 w-[90%] mx-auto">
           <h2 className=" flex items-center text-3xl text-yellow-950 md:text-4xl font-bold  pr-3 lg:border-r-2 border-yellow-950">
             Our Mission
           </h2>
-          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800 ">
+          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800">
             To promote and celebrate Ethiopian coffee culture worldwide by
             providing authentic and enriching experiences through café reviews,
             podcasts, documentaries, expert talk shows, interviews, consulting
@@ -86,11 +86,11 @@ function About() {
           className="flex flex-col lg:flex-row justify-center  gap-8"
         >
           <img src={etcoffee} alt="" className="object-cover" />
-          <div className="flex flex-col justify-center items-center my-5 space-y-8 max-w-5xl mx-auto text-gray-700">
+          <div className="flex flex-col justify-start items-start my-5 space-y-8 max-w-5xl mx-auto text-gray-700">
             <label className="text-3xl md:text-4xl  text-center font-bold text-yellow-950  pb-3 border-b-2 border-yellow-950 mb-7">
               Our Goals
             </label>
-            <div className="flex space-x-4 items-center">
+            <div className="flex space-x-4 items-start">
               <span className="text-4xl md:text-5xl text-yellow-500">01.</span>
               <p className="text-lg md:text-xl">
                 <strong>Promote Ethiopian Coffee:</strong> Raise global
