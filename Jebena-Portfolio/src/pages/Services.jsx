@@ -24,7 +24,7 @@ function Services() {
         </h1>
       </motion.div>
 
-      <div className="grid grid-cols-3 gap-5 gap-y-8 w-[80%] mx-auto">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 gap-y-8 w-[80%] mx-auto">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -70,7 +70,7 @@ function Services() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="flex flex-col justify-center items-center gap-5"
+          className="flex flex-col lg:justify-center items-center gap-5"
         >
           <div className="flex items-center justify-center w-[200px] h-[200px] rounded-full bg-yellow-600">
             <MdMovie size={80} color="white" />
@@ -147,7 +147,7 @@ function Services() {
         </motion.div>
       </div>
 
-      <div className="flex justify-center gap-16 mt-20 w-[70%] mx-auto">
+      <div className="flex flex-col lg:flex-row justify-center gap-16 mt-20 w-[70%] mx-auto">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -158,7 +158,7 @@ function Services() {
           <label className="flex justify-center text-center text-white text-3xl md:text-4xl font-bold">
             Future Outlook
           </label>
-          <p className="p-4 text-xl text-center text-white font-semibold">
+          <p className="p-4 md:text-xl text-center text-white font-semibold">
             Jebena aims to "taste the future of Ethiopian coffee" by
             continuously evolving and expanding our reach. We plan to extend our
             activities beyond Ethiopia, establishing a global presence and
@@ -175,7 +175,7 @@ function Services() {
           <label className="flex justify-center text-center text-white text-3xl md:text-4xl font-bold">
             Global Presence
           </label>
-          <p className="p-4 text-xl text-center text-white font-semibold">
+          <p className="p-4 md:text-xl text-center text-white font-semibold">
             While rooted in Ethiopia, Jebena is dedicated to promoting Ethiopian
             coffee culture across the globe. Our activities and collaborations
             extend internationally, ensuring that the unique flavors and rich

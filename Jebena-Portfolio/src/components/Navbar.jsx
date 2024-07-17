@@ -84,8 +84,16 @@ function Navbar() {
   return (
     <>
       <nav className="bg-white z-10 fixed top-0 w-full bg-opacity-80 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center text-yellow-900 md:text-xl">
-          <Link to="home" duration={200}>
+        <div className="w-[95%] mx-auto px-4 py-4 flex justify-between items-center text-yellow-900 md:text-xl">
+          <Link
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            duration={1500}
+            to="home"
+            className="cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
             <div className="flex gap-x-3 items-center">
               <img src={logo} alt="" className="w-[80px]" />
               <h2 className="text-3xl font-bold text-yellow-950 md:text-6xl">
@@ -93,19 +101,19 @@ function Navbar() {
               </h2>
             </div>
           </Link>
-          <div className="hidden md:flex">
+          <div className="hidden lg:flex">
             <Navlinks />
           </div>
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button className="lg:hidden" onClick={toggleMenu}>
             {isOpen ? (
               <span className="font-semibold text-3xl">X</span>
             ) : (
-              <FiMenu size={30} color="yellow" />
+              <FiMenu size={30} color="black" />
             )}
           </button>
         </div>
         {isOpen && (
-          <div className="md:hidden bg-gray-700 bg-opacity-[0] text-yellow-900 w-full ">
+          <div className="lg:hidden bg-gray-700 bg-opacity-[0] text-yellow-900 w-full ">
             <Navlinks className="flex-col gap-2 space-y-2 py-4" />
           </div>
         )}

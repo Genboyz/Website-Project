@@ -10,7 +10,7 @@ import Team from "./pages/Team";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen w-screen">
       <Navbar />
       <div id="home">
         <Home />

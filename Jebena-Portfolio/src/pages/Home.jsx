@@ -38,17 +38,17 @@ function Home() {
     <>
       <div
         style={{ backgroundImage: `url(${images[index].image})` }}
-        className="relative md:h-[800px] w-screen duration-500 bg-center bg-cover bg-no-repeat group"
+        className="relative md:h-[800px] h-[400px]  w-full duration-500 bg-cover bg-no-repeat group"
       >
         <div
           onClick={prev}
-          className="hidden group-hover:block absolute top-[50%] left-5 rounded-full p-2 bg-black/20 cursor-pointer"
+          className=" group-hover:block absolute top-[50%] left-5 rounded-full p-2 bg-black/20 cursor-pointer"
         >
           <BsChevronCompactLeft size={50} color="white" />
         </div>
         <div
           onClick={next}
-          className="hidden group-hover:block absolute top-[50%] right-5 rounded-full p-2 bg-black/20 cursor-pointer"
+          className=" group-hover:block absolute top-[50%] right-5 rounded-full p-2 bg-black/20 cursor-pointer"
         >
           <BsChevronCompactRight size={50} color="white" />
         </div>

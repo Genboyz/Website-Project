@@ -21,7 +21,7 @@ function About() {
         </motion.div>
       </div>
 
-      <div className=" flex justify-center gap-10 w-[80%] mx-auto">
+      <div className=" flex lg:flex-row flex-col items-center justify-center gap-10 w-[80%] mx-auto">
         <motion.div
           variants={fadeIn("right", 0.2)}
           initial="hidden"
@@ -39,7 +39,7 @@ function About() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="text-yellow-800 text-2xl text-justify md:w-[550px]"
+          className="text-yellow-800 md:text-2xl  text-xl text-justify md:w-[550px]"
         >
           <p>
             Jebena, named after the world's first coffee brewing equipment
@@ -52,23 +52,23 @@ function About() {
           </p>
         </motion.div>
       </div>
-      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex justify-center gap-10 py-6 mt-10 w-screen">
-        <div className=" flex justify-start gap-3 my-12 bg-white h-[300px] p-4 ">
-          <h2 className=" flex items-center text-3xl text-yellow-950 md:text-4xl font-bold  pr-3 border-r-2 border-yellow-950">
+      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex flex-col lg:flex-row justify-center lg:gap-10 gap-4 py-6 mt-10 w-screen">
+        <div className=" flex flex-col lg:flex-row lg:justify-start items-center lg:gap-3 lg:my-12 bg-white h-[300px] p-4  w-[90%] mx-auto">
+          <h2 className=" flex items-center text-3xl text-yellow-950 md:text-4xl font-bold  pr-3 lg:border-r-2 border-yellow-950">
             Our Mission
           </h2>
-          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800 md:w-[550px] ">
+          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800 lg:w-[550px] ">
             To promote and celebrate Ethiopian coffee culture worldwide by
             providing authentic and enriching experiences through café reviews,
             podcasts, documentaries, expert talk shows, interviews, consulting
             services, and organizing coffee-related events.
           </p>
         </div>
-        <div className=" flex justify-start gap-3  my-12 bg-white h-[300px] p-4 ">
-          <label className="flex items-center text-3xl  md:text-4xl font-bold text-yellow-950  pr-3 border-r-2 border-yellow-950 ">
+        <div className=" flex flex-col lg:flex-row lg:justify-start justify-center items-center lg:gap-3 lg:my-12 bg-white h-[300px] p-4  w-[90%] mx-auto">
+          <label className="flex items-center text-3xl  md:text-4xl font-bold text-yellow-950  pr-3 lg:border-r-2 border-yellow-950 ">
             Our Vision
           </label>
-          <p className="mt-8 text-justify text-lg md:text-xl  text-yellow-800 max-w-4xl mx-auto md:w-[550px]">
+          <p className="mt-8 text-justify text-lg md:text-xl  text-yellow-800 max-w-4xl  lg:w-[550px]">
             To be the leading global ambassador of Ethiopian coffee, known for
             our dedication to quality, authenticity, and cultural richness, and
             to inspire a deeper appreciation and understanding of Ethiopian
@@ -83,7 +83,7 @@ function About() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
-          className="flex justify-center gap-8"
+          className="flex flex-col lg:flex-row justify-center  gap-8"
         >
           <img src={etcoffee} alt="" className="object-cover" />
           <div className="flex flex-col justify-center items-center my-5 space-y-8 max-w-5xl mx-auto text-gray-700">
