@@ -84,7 +84,7 @@ function Navbar() {
   return (
     <>
       <nav className="bg-white z-10 fixed top-0 w-full bg-opacity-80 backdrop-blur-sm">
-        <div className="w-[95%] mx-auto px-4 py-4 flex justify-between items-center text-yellow-900 md:text-xl">
+        <div className="w-[90%] mx-auto px-4 py-4 flex justify-between items-center text-yellow-900 md:text-xl">
           <Link
             smooth={true}
             activeClass="active"

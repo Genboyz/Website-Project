@@ -52,12 +52,12 @@ function About() {
           </p>
         </motion.div>
       </div>
-      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex flex-col lg:flex-row justify-center lg:gap-10 gap-4 py-6 mt-10 w-screen">
+      <div className="bg-coffee-bean bg-fixed bg-no-repeat bg-cover  flex flex-col lg:flex-row justify-center lg:gap-10 gap-4 p-6 mt-10 w-screen">
         <div className=" flex flex-col lg:flex-row lg:justify-start items-center lg:gap-3 lg:my-12 bg-white h-[300px] p-4  w-[90%] mx-auto">
           <h2 className=" flex items-center text-3xl text-yellow-950 md:text-4xl font-bold  pr-3 lg:border-r-2 border-yellow-950">
             Our Mission
           </h2>
-          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800 lg:w-[550px] ">
+          <p className="text-justify mt-8 text-lg md:text-xl text-yellow-800 ">
             To promote and celebrate Ethiopian coffee culture worldwide by
             providing authentic and enriching experiences through café reviews,
             podcasts, documentaries, expert talk shows, interviews, consulting
@@ -68,7 +68,7 @@ function About() {
           <label className="flex items-center text-3xl  md:text-4xl font-bold text-yellow-950  pr-3 lg:border-r-2 border-yellow-950 ">
             Our Vision
           </label>
-          <p className="mt-8 text-justify text-lg md:text-xl  text-yellow-800 max-w-4xl  lg:w-[550px]">
+          <p className="mt-8 text-justify text-lg md:text-xl  text-yellow-800 max-w-4xl">
             To be the leading global ambassador of Ethiopian coffee, known for
             our dedication to quality, authenticity, and cultural richness, and
             to inspire a deeper appreciation and understanding of Ethiopian
